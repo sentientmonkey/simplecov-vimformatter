@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleCov::VimFormatter::VERSION
   spec.authors       = ["Scott Windsor"]
   spec.email         = ["swindsor@gmail.com"]
-  spec.description   = %q{Write a gem description}
-  spec.summary       = %q{Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Generates simplecov code coverage files for VIM}
+  spec.summary       = %q{Generates simplecov code coverage files for VIM}
+  spec.homepage      = "http://github.com/sentientmonkey/simplecov-vimformatter"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "simplecov"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
